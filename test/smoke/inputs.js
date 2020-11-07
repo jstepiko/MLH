@@ -47,7 +47,7 @@ describe('Inputs', function () {
 
         it('TC-023 Placeholder Age is correct', function () {
             const plchAge = $(sel.age).getAttribute('placeholder');
-            expect(plchAge).toEqual("Hero's age");
+            expect(plchAge).toEqual(exp.placeholderAge);
         });
 
     });
