@@ -45,6 +45,11 @@ describe('Inputs', function () {
 
     describe('Placeholders are correct', function () {
 
+        it('TC-022 Name ', function () {
+            const placeholder = $(sel.name).getAttribute('placeholder');
+            expect(placeholder).toEqual(exp.placeholderName);
+        });
+
         it('TC-023 Placeholder Age is correct', function () {
             const plchAge = $(sel.age).getAttribute('placeholder');
             expect(plchAge).toEqual(exp.placeholderAge);
